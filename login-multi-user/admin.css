@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Righteous', cursive;
+    
+}
+h3 {
+    color: blue;
+}
+body {
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(assets/brand/bg_freepik4.jpg);
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    transition: 0.5s;
+}
+.container .kotak {
+    position: relative;
+    width: 140px;
+    height: 100px;
+    background: white;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+}
+.container:hover .kotak{
+    transform: perspective(500px) rotatey(30deg);
+
+}
+
+.container .kotak:hover{
+    transform: perspective(500px) rotatey(0deg);
+}
+.container .kotak:hover~.kotak{
+    transform: perspective(500px) rotatey(-30deg);
+}
